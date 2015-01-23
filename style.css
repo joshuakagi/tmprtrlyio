@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.cta{
+	vertical-align: middle;
+}
+
+body {
+	font-family: 'Helvetica', 'sans-serif';
+	font-size: 2em;
+}
+
+h1{
+	font-size: 3em;
+}
+
+form {
+	width: 60%;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 1em auto 1em auto;
+	text-align: center;
+}
+
+form input {
+  margin: 1em auto 1em auto;
+	width: 90%;
+	height: 3em;
+	text-align: center;
+	font-size: xx-large;
+	border-radius: 4px;
+  	border: 1px solid #cccccc;
+}
+
+input[type="text"]
+{
+	color: #cccccc;
+}
+
+input[type="text"]:focus{
+	box-shadow: 0 0 6px #2ecc71;
+}
+
+
+div#content {
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+div#content h1 {
+	text-align: center;
+}
+
+div#videos {
+	display: block;
+	margin: auto;
+	padding: 1em;
+	text-align: center;
+}
+
+div.action {
+	display: block;
+	margin: auto;
+	max-height: 40px;
+}
+
+div.action a {
+	padding: 1em;
+	width: 40%;
+	font-weight: light;
+	background-color: #2ecc71;
+	border-radius: 0.5em;
+	text-align: center;
+	display: block;
+	margin: auto;
+	color: white;
+	text-decoration: none;
+}
+
+div#controls h3 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div#tweets {
+	font-size: xx-small;
+}
+
+div.tweet {
+	padding: 0.5em;
+}
+
+div#results{
+	margin-top: 120px;
+}
+div.tags {
+	text-align: center;
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+div.tag {
+	padding: 1em;
+  color: white;
+	background-color: grey;
+	text-align: center;
+	width: 40%;
+	margin: 1px auto 1px auto;
+	display: block;
+  font-size: xx-large;
+}
+
+div.tag div.word,
+div.tag div.count {
+  display: inline;
+  margin-left: 20px;
+}
+
+div.tag div.count {
+  visibility: hidden;
+  float: right;
+  margin-right: 1em;
+}
+
+div.tag div.word:after {
+  content: ' ¯\\_(ツ)_/¯';
+}
+
+div.tag.positive div.word:after {
+  content: " ＼(^‿^)／";
+}
+
+div.tag.negative div.word:after {
+  content: " t(-.-t)";
+}
+
+div.tag:hover div.count {
+  visibility: visible;
+}
+
+div#footer p {
+	text-align: right;
+	font-size: 10px;
+}
